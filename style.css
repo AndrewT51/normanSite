@@ -65,5 +65,22 @@ footer li {
   /*border: 1px solid black;*/
   display: inline-block;
   margin-right: -3px;
+}
 
+[data-toggle="tooltip"] {
+  cursor: help;
+}
+
+[class^="box"]:hover > .appearingInfoBox{
+  transform: translateY(-70px);
+
+}
+
+.appearingInfoBox {
+  padding-top: 5px;
+  background-color: rgba(196, 190, 190,.7);
+  color:black;
+  text-shadow: 1px 1px #dbd4d4;
+  height: 100px;
+  transition: .75s;
 }
