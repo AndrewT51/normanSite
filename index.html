@@ -9,25 +9,82 @@
 </head>
 <body>
   <div class="container">
-    <header>
+ <!--    <header>
       <img src="" alt="Company logo">
-    </header>
-    <nav>
-
-
+    </header> -->
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-header">
+      <!--   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> -->
+        <a class="navbar-brand" href="#">ARBSecurities</a>
+      </div>
+      <div class="navbar-collapse collapse"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li >
+            <a ui-sref="about">About</a>
+          </li>
+          <li>
+            <a ui-sref="home">Home</a>
+          </li>
+          <li>
+            <a href="../navbar-fixed-top/"></a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </nav>
+    <nav class="navbar navbar-inverse" id="sub-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="repositionUp">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li >
+            <a ui-sref="close-protection">Close Protection</a>
+          </li>
+          <li>
+            <a ui-sref="mobile-patrols">Mobile Patrols</a>
+          </li>
+          <li>
+            <a ui-sref="oil-and-gas">Oil & Gas</a>
+          </li>
+          <li>
+            <a ui-sref="event-security">Event Security</a>
+          </li>
+          <li>
+            <a ui-sref="alarm-response">Alarm Response</a>
+          </li>
+          <li>
+            <a ui-sref="estate-security">Estate Security</a>
+          </li>
+          <li>
+            <a ui-sref="vetting">Vetting</a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
     </nav>
     <div class="spacer">
       <ui-view></ui-view>
     </div>
     <footer>
       <ul>
-        <li>About</li>
-        <li>Mission</li>
+        <a ui-sref="about"><li>About</li></a>
+        <a ui-sref="mission-statement"><li>Mission</li></a>
       </ul>
     </footer>
   </div>
   <script src="public/bower_components/angular/angular.min.js"></script>
+  <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="public/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="public/bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

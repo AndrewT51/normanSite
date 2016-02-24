@@ -3,11 +3,13 @@
   margin: 0;
   text-align: center;
 }
-
+html,body {
+  height:100%;
+}
 
 header, nav {
   background-color: #b7a5a5;
-  width:1100px;
+  width:100%;
   position: fixed;
   top:0;
 }
@@ -21,11 +23,12 @@ nav {
 .spacer {
   display: inline-block;
   text-align: center;
-  margin-top: 72px;
+  margin-top: 20px;
 }
 
 section {
-  width:900px;
+  width:90%;
+  margin-left:5%;
 }
 
 article {
@@ -40,17 +43,21 @@ article *{
 }
 
 footer {
-  position: absolute;
-  background-color: #b7a5a5;
-  width: 1100px;
+  /*position: absolute;*/
+  height: 50px;
+  background-color: #222222;
+  width: 100%;
+  margin-top: 50px;
   margin-bottom: 15px;
 }
 
 footer>ul {
-  text-align: right;
+  text-align: left;
 }
 
 footer li {
+
+  color: #9d9d9d;
   display: inline-block;
   width:100px;
   margin-top: 10px;
@@ -83,4 +90,41 @@ footer li {
   text-shadow: 1px 1px #dbd4d4;
   height: 100px;
   transition: .75s;
+}
+.navbar {
+  margin-bottom: 0;
+  min-height:0px;
+  border-radius: 0;
+  overflow: hidden;
+  border: 0;
+}
+#sub-nav {
+  margin-top: 0px;
+  height: 30px;
+  overflow: visible;
+}
+#sub-nav li{
+  padding-right: 10px;
+}
+#sub-nav a{
+  padding: 2px;
+}
+.nav>li>a {
+  padding: 10px 5px;
+}
+#repositionUp {
+  position: relative;
+  top:-30px;
+}
+
+.board {
+  margin: 100px auto;
+  width:90%;
+  padding: 20px;
+  background-color: #dbd4d4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px;
+}
+.board>p, .board>h3 {
+  text-align: left;
 }
