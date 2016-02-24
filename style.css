@@ -24,6 +24,7 @@ nav {
   display: inline-block;
   text-align: center;
   margin-top: 20px;
+  min-height: 70vh;
 }
 
 section {
@@ -106,6 +107,9 @@ footer li {
 #sub-nav li{
   padding-right: 10px;
 }
+
+
+
 #sub-nav a{
   padding: 2px;
 }
@@ -118,7 +122,7 @@ footer li {
 }
 
 .board {
-  margin: 100px auto;
+  margin: 15% auto;
   width:90%;
   padding: 20px;
   background-color: #dbd4d4;
@@ -127,4 +131,14 @@ footer li {
 }
 .board>p, .board>h3 {
   text-align: left;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #777;
+  background-color: #222222;
+}
+.navbar-inverse .navbar-nav>li>a {
+  background-color: #222222;
+}
+.navbar-header {
+  height: 24px;
 }
