@@ -41,8 +41,8 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse"> 
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a ui-sref="close-protection"><span>Close Protection</span></a>
+          <li class="no-border">
+            <a ui-sref="close-protection"><span class="adjust-right">Close Protection</span></a>
           </li>
           <li>
             <a ui-sref="mobile-patrols">Mobile Patrols</a>
@@ -61,6 +61,12 @@
           </li>
           <li>
             <a ui-sref="vetting">Vetting</a>
+          </li>
+          <li>
+            <a ui-sref="about" class="visible-xs"><span>About</span></a>
+          </li>
+          <li>
+            <a ui-sref="home" class="visible-xs"><span>Home</span></a>
           </li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -81,6 +87,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
+  <script>
+  $(document).ready(function () {
+    $(".navbar-nav li a").click(function(event) {
+      $(".navbar-collapse").collapse('hide');
+    });
+  });
+  </script>
 
 </body>
 </html>
