@@ -35,6 +35,7 @@ section {
 article {
   padding: 20px;
 }
+
 article *{
   text-align: left;
 }
@@ -44,7 +45,6 @@ article *{
 }
 
 footer {
-  /*position: absolute;*/
   height: 50px;
   background-color: #222222;
   width: 100%;
@@ -57,7 +57,6 @@ footer>ul {
 }
 
 footer li {
-
   color: #9d9d9d;
   display: inline-block;
   width:100px;
@@ -70,7 +69,6 @@ footer li {
   cursor: pointer;
   width: 120px;
   height:300px;
-  /*border: 1px solid black;*/
   display: inline-block;
   margin-right: -3px;
 }
@@ -81,7 +79,25 @@ footer li {
 
 [class^="box"]:hover > .appearingInfoBox{
   transform: translateY(-70px);
+}
 
+@media (max-width: 768px){
+  .navbar-collapse {
+    margin-top: -3px;
+    width:100%;
+  }
+  .navbar-collapse.in, .collapsing {
+    overflow-y: visible;
+  }
+  #sub-nav a{
+    height:35px;
+  }
+  #sub-nav li {
+    padding-right:0 !important;
+  }
+  .spacer {
+    margin-top: 0;
+  }
 }
 
 .appearingInfoBox {
@@ -92,6 +108,7 @@ footer li {
   height: 100px;
   transition: .75s;
 }
+
 .navbar {
   margin-bottom: 0;
   min-height:0px;
@@ -99,23 +116,25 @@ footer li {
   overflow: hidden;
   border: 0;
 }
+
 #sub-nav {
   margin-top: 0px;
   height: 30px;
   overflow: visible;
 }
+
 #sub-nav li{
   padding-right: 10px;
 }
 
-
-
 #sub-nav a{
   padding: 2px;
 }
+
 .nav>li>a {
   padding: 10px 5px;
 }
+
 #repositionUp {
   position: relative;
   top:-30px;
@@ -129,16 +148,21 @@ footer li {
   border-radius: 10px;
   box-shadow: 2px 2px 8px;
 }
+
 .board>p, .board>h3 {
   text-align: left;
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
   color: #777;
   background-color: #222222;
 }
+
 .navbar-inverse .navbar-nav>li>a {
   background-color: #222222;
 }
+
 .navbar-header {
   height: 24px;
 }
