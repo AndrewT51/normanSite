@@ -19,47 +19,47 @@ app.config(["$urlRouterProvider", "$stateProvider", "$locationProvider" ,functio
   })
   .state("mission-statement",{
     url:"/mission-statement",
-    templateUrl: "./templates/mission.html",
+    templateUrl: "templates/mission.html",
     controller: "mainCtrl"
   })
   .state("about",{
     url:"/about",
-    templateUrl: "./templates/about.html",
+    templateUrl: "templates/about.html",
     controller: "mainCtrl"
   })
   .state("alarm-response",{
     url:"/alarm-response",
-    templateUrl: "./templates/alarmResponse.html",
+    templateUrl: "templates/alarmResponse.html",
     controller: "mainCtrl"
   })
   .state("event-security",{
     url:"/event-security",
-    templateUrl: "./templates/eventSecurity.html",
+    templateUrl: "templates/eventSecurity.html",
     controller: "mainCtrl"
   })
   .state("close-protection",{
     url:"/close-protection",
-    templateUrl: "./templates/closeProtection.html",
+    templateUrl: "templates/closeProtection.html",
     controller: "mainCtrl"
   })
   .state("oil-and-gas",{
     url:"/oil-and-gas",
-    templateUrl: "./templates/oilAndGas.html",
+    templateUrl: "templates/oilAndGas.html",
     controller: "mainCtrl"
  })
   .state("estate-security",{
     url:"/estate-security",
-    templateUrl: "./templates/estateSecurity.html",
+    templateUrl: "templates/estateSecurity.html",
     controller: "mainCtrl"
  })
   .state("mobile-patrols",{
     url:"/mobile-patrols",
-    templateUrl: "./templates/mobilePatrols.html",
+    templateUrl: "templates/mobilePatrols.html",
     controller: "mainCtrl"
  })
    .state("vetting",{
     url:"/vetting",
-    templateUrl: "./templates/vetting.html",
+    templateUrl: "templates/vetting.html",
     controller: "mainCtrl"
  })
 
