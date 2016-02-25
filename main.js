@@ -5,10 +5,10 @@ var app = angular.module("arbSecurities",["ui.router"]);
 app.config(["$urlRouterProvider", "$stateProvider", "$locationProvider" ,function($urlRouterProvider,$stateProvider, $locationProvider){
   $urlRouterProvider.otherwise('/home')
   
-  $locationProvider.html5Mode({
-    enabled:true,
-    requireBase: false
-  });
+  // $locationProvider.html5Mode({
+  //   enabled:true,
+  //   requireBase: false
+  // });
 
 
   $stateProvider
